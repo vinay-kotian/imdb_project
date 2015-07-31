@@ -37,7 +37,7 @@ urlpatterns = [
     url(r'^director/(?P<director_name>[0-9,a-z,A-Z]+)/$', views.directors_list),
     url(r'^genre_list/(?P<genre>[0-9,a-z,A-Z]+)/$', views.genre_list),
     url(r'^recomended_movies/(?P<movie_name>[0-9,a-z,A-Z]+)/$', views.recomended_movies),
-    # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^admin/', include(admin.site.urls)),
 ]
 urlpatterns = format_suffix_patterns(urlpatterns)
