@@ -1,5 +1,7 @@
 __author__ = 'vinay'
 
+# This script load data from the JSON File and saves it into the DB.
+
 import json
 from imdb_app.models import GenreCategory
 from imdb_app.models import MovieDetails
