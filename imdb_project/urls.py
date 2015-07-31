@@ -31,7 +31,7 @@ from imdb_app import views
 
 
 urlpatterns = [
-    # url(r'^', include(router.urls)),
+    url(r'^', views.movie_list),
     url(r'^movies/$', views.movie_list),
     url(r'^movies/(?P<name>[0-9,a-z,A-Z]+)/$', views.movie_detail),
     url(r'^director/(?P<director_name>[0-9,a-z,A-Z]+)/$', views.directors_list),
